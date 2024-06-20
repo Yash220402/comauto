@@ -18,7 +18,7 @@ def create_bounding_box(bbox_data):
     left = int(min(xs))
     top = int(min(ys))
     right = int(max(xs))
-    bottom = int(max(ys))\
+    bottom = int(max(ys))
     
     return [left, top, right, bottom]
 

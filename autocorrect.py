@@ -1,11 +1,10 @@
-# Step 1: Data Preprocessing
-import re  # regular expression
+import re  
 from collections import Counter
 import numpy as np
 import pandas as pd
 
 
-w = [] #words
+w = []
 with open('sample.txt','r',encoding="utf8") as f:
     file_name_data = f.read()
     file_name_data = file_name_data.lower()
@@ -13,7 +12,7 @@ with open('sample.txt','r',encoding="utf8") as f:
 
 
 v = set(w) #vocabulary
-print(f"The first 10 words in our dictionary are: \n{w[0:10]}")
+# print(f"The first 10 words in our dictionary are: \n{w[0:10]}")
 print(f"The dictionary has {len(v)} words ")
 
 
@@ -30,9 +29,6 @@ def get_count(words):
 
 word_count = get_count(w)
 print(f"The dictionary has  {len(word_count)} key values pairs")
-
-
-
 
 # implement get_probs function
 # to calculate the probability that any word will appear if randomly selected from the dictionary
