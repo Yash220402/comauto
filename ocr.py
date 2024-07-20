@@ -22,7 +22,6 @@ def create_bounding_box(bbox_data):
     
     return [left, top, right, bottom]
 
-# Open image
 image_path = "invoice4.jpg"
 image = Image.open(image_path)
 width, height = image.size
